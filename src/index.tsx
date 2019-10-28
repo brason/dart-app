@@ -1,12 +1,40 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import { render } from 'react-dom';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import './index.css';
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { initializeApp } from 'firebase';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import { BrowserRouter } from 'react-router-dom';
+
+initializeApp({
+  apiKey: 'AIzaSyD8wEhnTKn49_7sTzZ7HjcmmdyEn5wU6wk',
+  authDomain: 'bag-of-nuts.firebaseapp.com',
+  databaseURL: 'https://bag-of-nuts.firebaseio.com',
+  projectId: 'bag-of-nuts',
+  storageBucket: 'bag-of-nuts.appspot.com',
+  messagingSenderId: '835023127793',
+  appId: '1:835023127793:web:f19df42304811e7aa85550',
+});
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#2196f3',
+    },
+    secondary: {
+      main: '#ffffff',
+    },
+  },
+});
+
+render(
+  <ThemeProvider theme={theme}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </ThemeProvider>,
+  document.querySelector('#root'),
+);
