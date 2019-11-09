@@ -11,7 +11,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Close from 'mdi-material-ui/Close';
 import { Route, Switch } from 'react-router';
-import Home from './Home';
+import Matches from './Matches';
 import Match from './Match';
 import IconButton from '@material-ui/core/IconButton';
 import { Config, LegType, Score, SetType } from '../types';

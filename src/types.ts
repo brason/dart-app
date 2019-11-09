@@ -3,6 +3,23 @@ export interface User {
   name: string;
 }
 
+export interface Player extends User {
+  score: number;
+  setsWon: number;
+  legsWon: number;
+}
+
+export interface Match {
+  id: string;
+  players: Player[];
+  currentPlayerIndex: number;
+  currentSet: number;
+  currentLeg: number;
+  score: Score;
+  setType: SetType;
+  legType: LegType;
+}
+
 export enum SetType {
   NO_SETS = 'No Sets',
   BEST_OF_3 = 'Best of 3',
