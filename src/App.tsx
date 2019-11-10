@@ -55,18 +55,10 @@ export default function App() {
   return (
     <State>
       <Box height="100vh">
-        <AppBar color="secondary">
-          <Toolbar>
-            <Typography variant="h6">Dart App</Typography>
-            <Box ml="auto" />
-          </Toolbar>
-        </AppBar>
-        <Box pt="64px" height="calc(100% - 64px)">
-          <Switch>
-            <Route exact path="/(|matches|players)" component={MainViews} />
-            <Route path="/match/:matchId" component={Match} />
-          </Switch>
-        </Box>
+        <Switch>
+          <Route exact path="/(|matches|players)" component={MainViews} />
+          <Route path="/match/:matchId" component={Match} />
+        </Switch>
       </Box>
     </State>
   );

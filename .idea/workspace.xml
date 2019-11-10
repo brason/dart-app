@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25b482b5-4b1c-4b93-bf06-34dab6fd6a8a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Players.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CreateMatch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreateMatch.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Matches.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Match.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Match.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Matches.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Matches.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Players.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Players.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +77,7 @@
       <workItem from="1568582693092" duration="600000" />
       <workItem from="1568584273100" duration="46000" />
       <workItem from="1571688857027" duration="35872000" />
-      <workItem from="1573153754816" duration="22242000" />
+      <workItem from="1573153754816" duration="36111000" />
     </task>
     <servers />
   </component>
@@ -107,10 +105,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1512" y="436" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1572084320638" />
-    <state x="1373" y="100" width="1094" height="1207" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1573308950657">
+    <state x="1373" y="100" width="1094" height="1207" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1573397052157">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1373" y="100" width="1094" height="1207" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1573308950657" />
+    <state x="1373" y="100" width="1094" height="1207" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1573397052157" />
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1572082695451" />
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog/2560.1440/1920.1080" timestamp="1572082695451" />
     <state x="1636" y="360" width="606" height="708" key="find.popup" timestamp="1573332445204">

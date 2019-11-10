@@ -39,7 +39,7 @@ interface CreateMatchProps {
 export default function CreateMatch({ onAccept, onDecline }: CreateMatchProps) {
   const [config, setConfig] = useState<Config>({
     players: [],
-    setType: SetType.NO_SETS,
+    setType: SetType.FIRST_TO_1,
     legType: LegType.BEST_OF_3,
     score: Score.SCORE_301,
   });
@@ -104,12 +104,11 @@ export default function CreateMatch({ onAccept, onDecline }: CreateMatchProps) {
           <Typography>Sets</Typography>
           <Select
             options={[
-              SetType.NO_SETS,
-              SetType.BEST_OF_3,
-              SetType.BEST_OF_5,
               SetType.FIRST_TO_1,
               SetType.FIRST_TO_2,
               SetType.FIRST_TO_3,
+              SetType.BEST_OF_3,
+              SetType.BEST_OF_5,
             ].map(type => ({
               value: type,
               label: type,
@@ -127,11 +126,11 @@ export default function CreateMatch({ onAccept, onDecline }: CreateMatchProps) {
           <Typography>Legs</Typography>
           <Select
             options={[
-              LegType.BEST_OF_3,
-              LegType.BEST_OF_5,
               LegType.FIRST_TO_1,
               LegType.FIRST_TO_2,
               LegType.FIRST_TO_3,
+              LegType.BEST_OF_3,
+              LegType.BEST_OF_5,
             ].map(type => ({
               value: type,
               label: type,

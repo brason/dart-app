@@ -16,6 +16,7 @@ import { useCollection } from 'react-firebase-hooks/firestore';
 import { List } from '@material-ui/core';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
+import Chip from '@material-ui/core/Chip';
 
 export default function Matches() {
   const { location, history } = useReactRouter();
@@ -27,6 +28,10 @@ export default function Matches() {
   });
 
   const matches: Match[] = value ? value.docs.map(doc => ({ id: doc.id, ...doc.data() } as Match)) : [];
+
+  const handleMatchClick = (id: string) => () => {
+    history.push(`/match/${id}`);
+  };
 
   const handleCreateMatch = async () => {
     const { setType, legType, score, players } = await open({});
@@ -46,9 +51,11 @@ export default function Matches() {
         setType,
         legType,
         startedAt: firestore.FieldValue.serverTimestamp(),
-        currentLeg: 0,
-        currentSet: 0,
+        currentLeg: 1,
+        currentSet: 1,
         currentPlayerIndex: 0,
+        concluded: false,
+        history: [],
       });
 
     history.push(`match/${snap.id}`);
@@ -58,8 +65,12 @@ export default function Matches() {
     <Box height="100%">
       <List>
         {matches.map(match => (
-          <ListItem>
-            <ListItemText primary={match.id} />
+          <ListItem key={match.id} button onClick={handleMatchClick(match.id)}>
+            <ListItemText
+              primary={match.startedAt ? match.startedAt.toDate().toDateString() : 'Loading...'}
+              secondary={`${match.players.map(player => `${player.name}: ${player.legsWon}`).join(' | ')}`}
+            />
+            {!match.concluded && <Chip label="In progress" />}
           </ListItem>
         ))}
       </List>
