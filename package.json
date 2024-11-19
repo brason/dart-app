@@ -10,7 +10,7 @@
     "classnames": "^2.2.6",
     "date-fns": "^2.7.0",
     "dropbox": "^4.0.30",
-    "firebase": "^7.3.0",
+    "firebase": "^10.9.0",
     "mdi-material-ui": "^6.8.0",
     "prop-types": "^15.7.2",
     "ramda": "^0.26.1",
